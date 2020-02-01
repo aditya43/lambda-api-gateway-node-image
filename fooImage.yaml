@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: 'AWS Serverless Lambda - NodeJS Image Converter | Author: Aditya Hajare'
+Resources:
+    fooImage:
+        Type: 'AWS::Serverless::Function'
+        Properties:
+            Handler: index.handler
+            Runtime: nodejs8.10
+            CodeUri: .
+            Description: ''
+            MemorySize: 128
+            Timeout: 120
+            Role: 'arn:aws:iam::095773726081:role/service-role/fooImage-role-itxbjrdt'
+            Events:
+                Api1:
+                    Type: Api
+                    Properties:
+                        Path: /
+                        Method: GET
+                        Api2:
+                            Type: Api
+                            Properties:
+                                Path: /fooImage
+                                Method: ANY
