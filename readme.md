@@ -1,5 +1,5 @@
 ## About This Project
-Node JS Image Converter APP: AWS Serverless, Lambda, API Gateway, S3 Bucket etc.
+Node JS Image Converter App: AWS Serverless, Lambda, API Gateway, S3 Bucket etc.
 
 ## Author
 Aditya Hajare ([Linkedin](https://in.linkedin.com/in/aditya-hajare)).
